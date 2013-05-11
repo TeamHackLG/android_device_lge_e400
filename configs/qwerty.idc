@@ -1,4 +1,4 @@
-# Copyright (C) 2011 The Android Open Source Project
+# Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,26 +13,16 @@
 # limitations under the License.
 
 #
-# Input Device Calibration File for the e0 touch screen.
+# Emulator keyboard configuration file #1.
 #
 
-# Basic Parameters
 touch.deviceType = touchScreen
 touch.orientationAware = 1
 
-# Size
-touch.size.calibration = diameter
-touch.size.scale = 10
-touch.size.bias = 0
-touch.size.isSummed = 0
+keyboard.layout = qwerty
+keyboard.characterMap = qwerty
+keyboard.orientationAware = 1
+keyboard.builtIn = 1
 
-# Pressure
-# Driver reports signal strength as pressure.
-#
-# A normal thumb touch typically registers about 200 signal strength
-# units although we don't expect these values to be accurate.
-touch.pressure.calibration = amplitude
-touch.pressure.scale = 0.005
-
-# Orientation
-touch.orientation.calibration = none
+cursor.mode = navigation
+cursor.orientationAware = 1
